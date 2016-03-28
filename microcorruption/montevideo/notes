@@ -235,8 +235,8 @@ SC:
 3012 7f00      push	#0x7f //Contains 0x00!!!
 b012 4c45      call	#0x454c <INT>
 ->
-3840 7f01	mov 7f01 r8
-38f0 ff10	and ff10 r8
+3840 7f01	mov 017f r8
+38f0 ff10	and 10ff r8
 0812		push r8
 b012 4c45	call	#0x454c <INT>
 
