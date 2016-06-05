@@ -1,0 +1,21 @@
+4438 <main>
+	call	#0x4560 <login>
+
+4560 <login>
+	Looks to be a pretty good implementation of user input
+		get username via getsn
+		put it in 0x2402 w/ null term
+		get length by looking for null in 0x2401
+		call strcpy(sp, 0x2402, 0x2402-length)
+		cmp.b	#0x21, r11 //0x21==33
+	username
+		getsn upto 0xff (255) bytes onto heap
+		null term length < 0x21
+	password
+		getsn upto  (0x1f - username_len) & 0x1ff bytes onto heap
+		null term length + username length < 0x21
+	make username.len == 0x20 
+		then possible heap copy password.len == upto 0x1ff
+hex
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbb4c44bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
