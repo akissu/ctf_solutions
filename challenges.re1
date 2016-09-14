@@ -1,0 +1,16 @@
+<f>:
+   0:                   mov    r8,rdi		#r8=rdi
+   3:                   push   rbx		#sp+=rbx, ie base ptr
+   4:                   mov    rdi,rsi		#rdi=rsi, ie dst idx=src idx
+   7:                   mov    rbx,rdx		#rbx=rdx, ie base=data
+   a:                   mov    rsi,r8		#rsi=r8, ie src idx=r8
+   d:                   xor    rdx,rdx		#rdx=0x0
+
+begin:
+  10:                   lods   rax,QWORD PTR ds:[rsi]	#rax=string@rsi
+  12:                   div    rbx			#rax=rax/rbx
+  15:                   stos   QWORD PTR es:[rdi],rax	#*rdi=string@rax
+  17:                   loop   begin			#tst --rcx, jz begin
+  19:                   pop    rbx			#start of epiloge
+  1a:                   mov    rax,rdx
+  1d:                   ret

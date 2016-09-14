@@ -1,0 +1,10 @@
+4438 <main>
+	username and password need to be in following format uuu:ppp
+	getsn will read in 0x13 (19)
+
+The program uses printf to print the username back to the screen
+This could potentially be a string format attack
+Main will ret to 
+	44a6 <__stop_progExec__>
+This addr could be overwritten to point at
+	4490:  b012 da44      call	#0x44da <unlock_door>

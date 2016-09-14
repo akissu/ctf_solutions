@@ -1,0 +1,276 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BRANCH 0
+
+var_10 = 0x1c85^0x17 => 0x1c92
+
+imul var0 0x1c92
+0x5475
+
+
+loc_401548:
+mov     [rbp+var_10], 1C85h
+mov     eax, [rbp+var_10]
+xor     eax, 17h
+mov     [rbp+var_10], eax
+mov     edx, [rbp+var_2B0]
+mov     rax, [rbp+input_array]
+mov     eax, [rax]
+imul    edx, eax
+mov     ecx, [rbp+var_2AC]
+mov     rax, [rbp+input_array]
+add     rax, 4
+mov     eax, [rax]
+imul    eax, ecx
+mov     ecx, edx
+sub     ecx, eax
+mov     edx, [rbp+var_2A8]
+mov     rax, [rbp+input_array]
+add     rax, 8
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_2A4]
+mov     rax, [rbp+input_array]
+add     rax, 12
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_2A0]
+mov     rax, [rbp+input_array]
+add     rax, 16
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_29C]
+mov     rax, [rbp+input_array]
+add     rax, 20
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_298]
+mov     rax, [rbp+input_array]
+add     rax, 24
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_294]
+mov     rax, [rbp+input_array]
+add     rax, 28
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_290]
+mov     rax, [rbp+input_array]
+add     rax, 32
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_28C]
+mov     rax, [rbp+input_array]
+add     rax, 36
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_288]
+mov     rax, [rbp+input_array]
+add     rax, 40
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_284]
+mov     rax, [rbp+input_array]
+add     rax, 44
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_280]
+mov     rax, [rbp+input_array]
+add     rax, 48
+mov     eax, [rax]
+imul    eax, edx
+add     eax, ecx
+cmp     eax, 1468753h
+jz      short loc_4016A1
+
+
+
+
+
+
+
+_______________________________________
+imul    edx, var[0]
+mov     ecx, [rbp+var_2AC]
+
+
+imul    var[1], ecx
+mov     ecx, edx
+sub     ecx, var[1]
+mov     edx, [rbp+var_2A8]
+
+
+
+imul    var[2], edx
+sub     ecx, var[2]
+mov     edx, [rbp+var_2A4]
+
+
+
+imul    var[3], edx
+sub     ecx, var[3]
+mov     edx, [rbp+var_2A0]
+
+
+
+imul    var[4], edx
+add     ecx, var[4]
+mov     edx, [rbp+var_29C]
+
+
+
+imul    var[5], edx
+add     ecx, var[5]
+mov     edx, [rbp+var_298]
+
+
+
+imul    var[6], edx
+add     ecx, var[6]
+mov     edx, [rbp+var_294]
+
+
+
+imul    var[7], edx
+add     ecx, var[7]
+mov     edx, [rbp+var_290]
+
+
+
+imul    var[8], edx
+add     ecx, var[8]
+mov     edx, [rbp+var_28C]
+
+
+
+imul    var[9], edx
+add     ecx, var[9]
+mov     edx, [rbp+var_288]
+
+
+
+imul    var[10], edx
+add     ecx, var[10]
+mov     edx, [rbp+var_284]
+
+
+
+imul    var[11], edx
+add     ecx, var[11]
+mov     edx, [rbp+var_280]
+
+
+
+imul    var[12], edx
+add     var[12], ecx
+
+cmp     var[12], 1468753h
+jz      short loc_4016A1
+_______________________________________
+(var[12]*0xD5E5)+((((((((((((0x926d*var[0])-(var[1]*0x5475))-(var[2]*0x752))-(var[3]*0xB4C1))+(var[4]*0xC5C9))+(var[5]*0xA89E))+(var[6]*0x7372))+(var[7]*0x4004))+(var[8]*0xE15D))+(var[9]*0x3922))+(var[10]*0x5262))+(var[11]*0x99AE))
+
+
+cmp     var[12], 1468753h
+jz      short loc_4016A1
+
+________________________________________
+((((((((((((0x926d*a)-(b*0x5475))-(c*0x752))-(d*0xB4C1))+(e*0xC5C9))+(f*0xA89E))+(g*0x7372))+(h*0x4004))+(i*0xE15D))+(j*0x3922))+(k*0x5262))+(l*0x99AE))+(m*0xD5E5)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BRANCH 1
+loc_4016A1:
+mov     edx, [rbp+var_27C]
+mov     rax, [rbp+var_2B8]
+mov     eax, [rax]
+imul    edx, eax
+mov     ecx, [rbp+var_278]
+mov     rax, [rbp+var_2B8]
+add     rax, 4
+mov     eax, [rax]
+imul    eax, ecx
+lea     ecx, [rdx+rax]
+mov     edx, [rbp+var_274]
+mov     rax, [rbp+var_2B8]
+add     rax, 8
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_270]
+mov     rax, [rbp+var_2B8]
+add     rax, 0Ch
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_26C]
+mov     rax, [rbp+var_2B8]
+add     rax, 10h
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_268]
+mov     rax, [rbp+var_2B8]
+add     rax, 14h
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_264]
+mov     rax, [rbp+var_2B8]
+add     rax, 18h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_260]
+mov     rax, [rbp+var_2B8]
+add     rax, 1Ch
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_25C]
+mov     rax, [rbp+var_2B8]
+add     rax, 20h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_258]
+mov     rax, [rbp+var_2B8]
+add     rax, 24h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_254]
+mov     rax, [rbp+var_2B8]
+add     rax, 28h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_250]
+mov     rax, [rbp+var_2B8]
+add     rax, 2Ch
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_24C]
+mov     rax, [rbp+var_2B8]
+add     rax, 30h
+mov     eax, [rax]
+imul    eax, edx
+add     eax, ecx
+cmp     eax, 162F30h
+jz      short loc_4017E9
+________________________________________
+
+ecx = 
+(((((((((([(var[0]*var_27C)+(var[1]*var_278)]-(var[2]*var_274))+(var[3]*var_270))+(var[4]*var_26C))+(var[5]*var_268))-(var[6]*var_264))-(var[7]*var_260))-(var[8]*var_25C))-(var[9]*var_258))-(var[10]*var_254))-(var[11]*var_250))
+
+eax = (var[12]*var_24C)+(((((((((([(var[0]*var_27C)+(var[1]*var_278)]-(var[2]*var_274))+(var[3]*var_270))+(var[4]*var_26C))+(var[5]*var_268))-(var[6]*var_264))-(var[7]*var_260))-(var[8]*var_25C))-(var[9]*var_258))-(var[10]*var_254))-(var[11]*var_250))
+
+add     eax, ecx
+cmp     eax, 162F30h
+jz      short loc_4017E9

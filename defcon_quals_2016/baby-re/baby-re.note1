@@ -1,0 +1,538 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BRANCH 0
+
+var_10 = 0x1c85^0x17 => 0x1c92
+
+imul var0 0x1c92
+0x5475
+
+
+loc_401548:
+mov     [rbp+var_10], 1C85h
+mov     eax, [rbp+var_10]
+xor     eax, 17h
+mov     [rbp+var_10], eax
+mov     edx, [rbp+var_2B0]
+mov     rax, [rbp+input_array]
+mov     eax, [rax]
+imul    edx, eax
+mov     ecx, [rbp+var_2AC]
+mov     rax, [rbp+input_array]
+add     rax, 4
+mov     eax, [rax]
+imul    eax, ecx
+mov     ecx, edx
+sub     ecx, eax
+mov     edx, [rbp+var_2A8]
+mov     rax, [rbp+input_array]
+add     rax, 8
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_2A4]
+mov     rax, [rbp+input_array]
+add     rax, 12
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_2A0]
+mov     rax, [rbp+input_array]
+add     rax, 16
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_29C]
+mov     rax, [rbp+input_array]
+add     rax, 20
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_298]
+mov     rax, [rbp+input_array]
+add     rax, 24
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_294]
+mov     rax, [rbp+input_array]
+add     rax, 28
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_290]
+mov     rax, [rbp+input_array]
+add     rax, 32
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_28C]
+mov     rax, [rbp+input_array]
+add     rax, 36
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_288]
+mov     rax, [rbp+input_array]
+add     rax, 40
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_284]
+mov     rax, [rbp+input_array]
+add     rax, 44
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_280]
+mov     rax, [rbp+input_array]
+add     rax, 48
+mov     eax, [rax]
+imul    eax, edx
+add     eax, ecx
+cmp     eax, 1468753h
+jz      short loc_4016A1
+
+
+
+
+
+
+
+_______________________________________
+imul    edx, var[0]
+mov     ecx, [rbp+var_2AC]
+
+
+imul    var[1], ecx
+mov     ecx, edx
+sub     ecx, var[1]
+mov     edx, [rbp+var_2A8]
+
+
+
+imul    var[2], edx
+sub     ecx, var[2]
+mov     edx, [rbp+var_2A4]
+
+
+
+imul    var[3], edx
+sub     ecx, var[3]
+mov     edx, [rbp+var_2A0]
+
+
+
+imul    var[4], edx
+add     ecx, var[4]
+mov     edx, [rbp+var_29C]
+
+
+
+imul    var[5], edx
+add     ecx, var[5]
+mov     edx, [rbp+var_298]
+
+
+
+imul    var[6], edx
+add     ecx, var[6]
+mov     edx, [rbp+var_294]
+
+
+
+imul    var[7], edx
+add     ecx, var[7]
+mov     edx, [rbp+var_290]
+
+
+
+imul    var[8], edx
+add     ecx, var[8]
+mov     edx, [rbp+var_28C]
+
+
+
+imul    var[9], edx
+add     ecx, var[9]
+mov     edx, [rbp+var_288]
+
+
+
+imul    var[10], edx
+add     ecx, var[10]
+mov     edx, [rbp+var_284]
+
+
+
+imul    var[11], edx
+add     ecx, var[11]
+mov     edx, [rbp+var_280]
+
+
+
+imul    var[12], edx
+add     var[12], ecx
+
+cmp     var[12], 1468753h
+jz      short loc_4016A1
+_______________________________________
+(var[12]*0xD5E5)+((((((((((((0x926d*var[0])-(var[1]*0x5475))-(var[2]*0x752))-(var[3]*0xB4C1))+(var[4]*0xC5C9))+(var[5]*0xA89E))+(var[6]*0x7372))+(var[7]*0x4004))+(var[8]*0xE15D))+(var[9]*0x3922))+(var[10]*0x5262))+(var[11]*0x99AE))
+
+
+cmp     var[12], 1468753h
+jz      short loc_4016A1
+
+________________________________________
+((((((((((((0x926d*a)-(b*0x5475))-(c*0x752))-(d*0xB4C1))+(e*0xC5C9))+(f*0xA89E))+(g*0x7372))+(h*0x4004))+(i*0xE15D))+(j*0x3922))+(k*0x5262))+(l*0x99AE))+(m*0xD5E5)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BRANCH 1
+loc_4016A1:
+mov     edx, [rbp+var_27C]
+mov     rax, [rbp+var_2B8]
+mov     eax, [rax]
+imul    edx, eax
+mov     ecx, [rbp+var_278]
+mov     rax, [rbp+var_2B8]
+add     rax, 4
+mov     eax, [rax]
+imul    eax, ecx
+lea     ecx, [rdx+rax]
+mov     edx, [rbp+var_274]
+mov     rax, [rbp+var_2B8]
+add     rax, 8
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_270]
+mov     rax, [rbp+var_2B8]
+add     rax, 0Ch
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_26C]
+mov     rax, [rbp+var_2B8]
+add     rax, 10h
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_268]
+mov     rax, [rbp+var_2B8]
+add     rax, 14h
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_264]
+mov     rax, [rbp+var_2B8]
+add     rax, 18h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_260]
+mov     rax, [rbp+var_2B8]
+add     rax, 1Ch
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_25C]
+mov     rax, [rbp+var_2B8]
+add     rax, 20h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_258]
+mov     rax, [rbp+var_2B8]
+add     rax, 24h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_254]
+mov     rax, [rbp+var_2B8]
+add     rax, 28h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_250]
+mov     rax, [rbp+var_2B8]
+add     rax, 2Ch
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_24C]
+mov     rax, [rbp+var_2B8]
+add     rax, 30h
+mov     eax, [rax]
+imul    eax, edx
+add     eax, ecx
+cmp     eax, 162F30h
+jz      short loc_4017E9
+________________________________________
+
+ecx = 
+(((((((((([(var[0]*var_27C)+(var[1]*var_278)]-(var[2]*var_274))+(var[3]*var_270))+(var[4]*var_26C))+(var[5]*var_268))-(var[6]*var_264))-(var[7]*var_260))-(var[8]*var_25C))-(var[9]*var_258))-(var[10]*var_254))-(var[11]*var_250))
+
+eax = (var[12]*var_24C)+(((((((((([(var[0]*var_27C)+(var[1]*var_278)]-(var[2]*var_274))+(var[3]*var_270))+(var[4]*var_26C))+(var[5]*var_268))-(var[6]*var_264))-(var[7]*var_260))-(var[8]*var_25C))-(var[9]*var_258))-(var[10]*var_254))-(var[11]*var_250))
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BRANCH 2
+loc_4017E9:
+mov     eax, [rbp+var_248]
+neg     eax
+mov     edx, eax
+mov     rax, [rbp+var_input]
+mov     eax, [rax]
+imul    edx, eax
+mov     ecx, [rbp+var_244]
+mov     rax, [rbp+var_input]
+add     rax, 4
+mov     eax, [rax]
+imul    eax, ecx
+lea     ecx, [rdx+rax]
+mov     edx, [rbp+var_240]
+mov     rax, [rbp+var_input]
+add     rax, 8
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_23C]
+mov     rax, [rbp+var_input]
+add     rax, 0Ch
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_238]
+mov     rax, [rbp+var_input]
+add     rax, 10h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_234]
+mov     rax, [rbp+var_input]
+add     rax, 14h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_230]
+mov     rax, [rbp+var_input]
+add     rax, 18h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_22C]
+mov     rax, [rbp+var_input]
+add     rax, 1Ch
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_228]
+mov     rax, [rbp+var_input]
+add     rax, 20h
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_224]
+mov     rax, [rbp+var_input]
+add     rax, 24h
+mov     eax, [rax]
+imul    eax, edx
+sub     ecx, eax
+mov     edx, [rbp+var_220]
+mov     rax, [rbp+var_input]
+add     rax, 28h
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_21C]
+mov     rax, [rbp+var_input]
+add     rax, 2Ch
+mov     eax, [rax]
+imul    eax, edx
+add     ecx, eax
+mov     edx, [rbp+var_218]
+mov     rax, [rbp+var_input]
+add     rax, 30h
+mov     eax, [rax]
+imul    eax, edx
+add     eax, ecx
+cmp     eax, 0FFB2939Ch
+jz      short loc_401935
+
+*************************************************************
+((((((((((((var[0]*Z)-(var[1]*Z))-(var[2]*Z))-(var[3]*Z))+(var[4]*Z))+(var[5]*Z))+(var[6]*Z))+(var[7]*Z))+(var[8]*Z))+(var[9]*Z))+(var[10]*Z))+(var[11]*Z))+(var[12]*Z)
+(((((((((([(var[0]*Z)+(var[1]*Z)]-(var[2]*Z))+(var[3]*Z))+(var[4]*Z))+(var[5]*Z))-(var[6]*Z))-(var[7]*Z))-(var[8]*Z))-(var[9]*Z))-(var[10]*Z))-(var[11]*Z))+(var[12]*Z)
+(((((((((([(var[0]*(~Z))+(var[1]*Z)]-(var[2]*Z))+(var[3]*Z))-(var[4]*Z))-(var[5]*Z))-(var[6]*Z))-(var[7]*Z))+(var[8]*Z))-(var[9]*Z))+(var[10]*Z))+(var[11]*Z))+(var[12]*Z)
+((((((((((((var[0]*Z)-(var[1]*Z))-(var[2]*Z))-(var[3]*Z))+(var[4]*Z))-(var[5]*Z))+(var[6]*Z))+(var[7]*Z))-(var[8]*Z))-(var[9]*Z))+(var[10]*Z))-(var[11]*Z))-(var[12]*Z)
+(((((((((([(var[0]*(~Z))+(var[1]*Z)]+(var[2]*Z))+(var[3]*Z))+(var[4]*Z))-(var[5]*Z))-(var[6]*Z))-(var[7]*Z))+(var[8]*Z))+(var[9]*Z))-(var[10]*Z))+(var[11]*Z))+(var[12]*Z)
+((((((((((((var[0]*(~Z))-(var[1]*Z))+(var[2]*Z))-(var[3]*Z))-(var[4]*Z))-(var[5]*Z))+(var[6]*Z))+(var[7]*Z))-(var[8]*Z))-(var[9]*Z))+(var[10]*Z))+(var[11]*Z))-(var[12]*Z)
+(((((((((([(var[0]*(~Z))+(var[1]*Z)]+(var[2]*Z))-(var[3]*Z))-(var[4]*Z))-(var[5]*Z))-(var[6]*Z))+(var[7]*Z))-(var[8]*Z))+(var[9]*Z))-(var[10]*Z))-(var[11]*Z))+(var[12]*Z)
+(((((((((([(var[0]*(~Z))+(var[1]*Z)]-(var[2]*Z))-(var[3]*Z))-(var[4]*Z))-(var[5]*Z))+(var[6]*Z))+(var[7]*Z))-(var[8]*Z))-(var[9]*Z))-(var[10]*Z))+(var[11]*Z))-(var[12]*Z)
+(((((((((([(var[0]*Z)+(var[1]*Z)]-(var[2]*Z))+(var[3]*Z))+(var[4]*Z))+(var[5]*Z))-(var[6]*Z))-(var[7]*Z))-(var[8]*Z))-(var[9]*Z))+(var[10]*Z))-(var[11]*Z))+(var[12]*Z)
+(((((((((([(var[0]*(~Z))+(var[1]*Z)]-(var[2]*Z))+(var[3]*Z))-(var[4]*Z))-(var[5]*Z))+(var[6]*Z))+(var[7]*Z))+(var[8]*Z))+(var[9]*Z))+(var[10]*Z))-(var[11]*Z))+(var[12]*Z)
+((((((((((((var[0]*(~Z))-(var[1]*Z))-(var[2]*Z))-(var[3]*Z))-(var[4]*Z))+(var[5]*Z))+(var[6]*Z))+(var[7]*Z))-(var[8]*Z))+(var[9]*Z))+(var[10]*Z))-(var[11]*Z))+(var[12]*Z)
+(((((((((([(var[0]*Z)+(var[1]*Z)]-(var[2]*Z))-(var[3]*Z))+(var[4]*Z))+(var[5]*Z))-(var[6]*Z))-(var[7]*Z))+(var[8]*Z))+(var[9]*Z))-(var[10]*Z))+(var[11]*Z))+(var[12]*Z)
+(((((((((([(var[0]*Z)+(var[1]*Z)]-(var[2]*Z))+(var[3]*Z))+(var[4]*Z))-(var[5]*Z))-(var[6]*Z))+(var[7]*Z))+(var[8]*Z))+(var[9]*Z))-(var[10]*Z))+(var[11]*Z))+(var[12]*Z)
+*************************************************************
+lea r3 [r0+r1] === r3 = r0+r1
+
+((((((((((((var[0]*0x926d)-(var[1]*0x5475))-(var[2]*0x752))-(var[3]*0x0b4c1))+(var[4]*0x0C5C9))+(var[5]*0x0A89E))+(var[6]*0x7372))+(var[7]*0x4004))+(var[8]*0x0E15D))+(var[9]*0x3922))+(var[10]*0x5262))+(var[11]*0x99AE))+(var[12]*0x0D5E5)
+(((((((((([(var[0]*0x0C6F8)+(var[1]*0x12C9)]-(var[2]*0x1783))+(var[3]*0x9832))+(var[4]*0x39CA))+(var[5]*0x5847))-(var[6]*0x345))-(var[7]*0x8F77))-(var[8]*0x0C5A0))-(var[9]*0x2E35))-(var[10]*0x4E4E))-(var[11]*0x2428))+(var[12]*0x0CFEC)
+(((((((((([(var[0]*(~0x974A))+(var[1]*0x0CECF)]-(var[2]*0x41F2))+(var[3]*0x691B))-(var[4]*0x0AD9E))-(var[5]*0x48A9))-(var[6]*0x0FEC5))-(var[7]*0xvar_22C))+(var[8]*0x4526))-(var[9]*0x8476))+(var[10]*0x0A69E))+(var[11]*0x14FB))+(var[12]*0x2CCD)
+((((((((((((var[0]*0x0E193)-(var[1]*0x5D51))-(var[2]*0x65A0))-(var[3]*0x6252))+(var[4]*0x0D42D))-(var[5]*0x7E51))+(var[6]*0x2999))+(var[7]*0x87F5))-(var[8]*0x23D3))-(var[9]*0x5947))+(var[10]*0x21AD))-(var[11]*0x27A))-(var[12]*0x2E58)
+(((((((((([(var[0]*(~0x36B5))+(var[1]*0x3FC3)]+(var[2]*0x0ABBC))+(var[3]*0x876E))+(var[4]*0x0D669))-(var[5]*0x17FD))-(var[6]*0x8A63))-(var[7]*0x0F219))+(var[8]*0x6DE6))+(var[9]*0x0B2))-(var[10]*0x0E91C))+(var[11]*0x3CDA))+(var[12]*0x0C3A2)
+
+
+
+0x9F38
+0x55FE
+0x3528
+0x1352
+0x687E
+0x7BDC
+0x9AB3
+0x3522
+0xE6AF
+0x7FE2
+0x729D
+0x2841
+0x3D22
+
+((((((((((((var[0]*(~0x))-(var[1]*0x))+(var[2]*0x))-(var[3]*0x))-(var[4]*0x))-(var[5]*0x))+(var[6]*0x))+(var[7]*0x))-(var[8]*0x))-(var[9]*0x))+(var[10]*0x))+(var[11]*0x))-(var[12]*0x)
+
+0x0B98B
+0x0E200
+0x34A5
+0x27EB
+0x13A8
+0x522F
+0x73A7
+0x0D7C9
+0x17B1
+0x3EAF
+0x11CA
+0x8D6
+0x49D7
+
+(((((((((([(var[0]*(~0x))+(var[1]*0x)]+(var[2]*0x))-(var[3]*0x))-(var[4]*0x))-(var[5]*0x))-(var[6]*0x))+(var[7]*0x))-(var[8]*0x))+(var[9]*0x))-(var[10]*0x))-(var[11]*0x))+(var[12]*0x)
+
+0x0FF8B
+0x4317
+0x24C2
+0x57F2
+0x0CC99
+0x2413
+0x0D03D
+0x0BB25
+0x0E6E7
+0x0A149
+0x5F66
+0x0A0DA
+0x5B97
+
+(((((((((([(var[0]*(~0x))+(var[1]*0x)]-(var[2]*0x))-(var[3]*0x))-(var[4]*0x))-(var[5]*0x))+(var[6]*0x))+(var[7]*0x))-(var[8]*0x))-(var[9]*0x))-(var[10]*0x))+(var[11]*0x))-(var[12]*0x)
+
+0x70D
+0x1027
+0x4204
+0x8265
+0x0B6AF
+0x0E4B7
+0x8546
+0x0AF78
+0x2E9D
+0x5032
+0x3D53
+0x8EF5
+0x4737
+
+(((((((((([(var[0]*0x)+(var[1]*0x)]-(var[2]*0x))+(var[3]*0x))+(var[4]*0x))+(var[5]*0x))-(var[6]*0x))-(var[7]*0x))-(var[8]*0x))-(var[9]*0x))+(var[10]*0x))-(var[11]*0x))+(var[12]*0x)
+
+0x0A7BD
+0x0EE80
+0x0B071
+0x0A144
+0x6BA
+0x6737
+0x0B7CC
+0x0A57B
+0x3AB9
+0x4A1F
+0x2A24
+0x8227
+0x0F8C0
+
+(((((((((([(var[0]*(~0x))+(var[1]*0x)]-(var[2]*0x))+(var[3]*0x))-(var[4]*0x))-(var[5]*0x))+(var[6]*0x))+(var[7]*0x))+(var[8]*0x))+(var[9]*0x))+(var[10]*0x))-(var[11]*0x))+(var[12]*0x)
+
+0x90DD
+0x0C986
+0x4586
+0x278F
+0x0CCA4
+0x31CA
+0x312B
+0x0E5A2
+0x204D
+0x5855
+0x7821
+0x5175
+0x7DD8
+
+((((((((((((var[0]*(~0x))-(var[1]*0x))-(var[2]*0x))-(var[3]*0x))-(var[4]*0x))+(var[5]*0x))+(var[6]*0x))+(var[7]*0x))-(var[8]*0x))+(var[9]*0x))+(var[10]*0x))-(var[11]*0x))+(var[12]*0x)
+
+0x8F2A
+0x0B9CE
+0x8202
+0x0E72C
+0x0FEAC
+0x240C
+0x0E8CF
+0x0F5A8
+0x0BE4F
+0x0B8F4
+0x92D8
+0x0E10C
+0x9E3E
+
+(((((((((([(var[0]*0x)+(var[1]*0x)]-(var[2]*0x))-(var[3]*0x))+(var[4]*0x))+(var[5]*0x))-(var[6]*0x))-(var[7]*0x))+(var[8]*0x))+(var[9]*0x))-(var[10]*0x))+(var[11]*0x))+(var[12]*0x)
+
+0x0CA17
+0x8C27
+0x0F992
+0x1006
+0x0E877
+0x538A
+0x5121
+0x6795
+0x6DF9
+0x62A4
+0x0AB0D
+0x6421
+0x1C92
+
+(((((((((([(var[0]*0x)+(var[1]*0x)]-(var[2]*0x))+(var[3]*0x))+(var[4]*0x))-(var[5]*0x))-(var[6]*0x))+(var[7]*0x))+(var[8]*0x))+(var[9]*0x))-(var[10]*0x))+(var[11]*0x))+(var[12]*0x)
+*************************************************************
+
+
+
+
+((((((((((((var[0]*0x926d)-(var[1]*0x5475))-(var[2]*0x752))-(var[3]*0x0b4c1))+(var[4]*0x0C5C9))+(var[5]*0x0A89E))+(var[6]*0x7372))+(var[7]*0x4004))+(var[8]*0x0E15D))+(var[9]*0x3922))+(var[10]*0x5262))+(var[11]*0x99AE))+(var[12]*0x0D5E5)
+
+(((((((((([(var[0]*0x0C6F8)+(var[1]*0x12C9)]-(var[2]*0x1783))+(var[3]*0x9832))+(var[4]*0x39CA))+(var[5]*0x5847))-(var[6]*0x345))-(var[7]*0x8F77))-(var[8]*0x0C5A0))-(var[9]*0x2E35))-(var[10]*0x4E4E))-(var[11]*0x2428))+(var[12]*0x0CFEC)
+
+(((((((((([(var[0]*(~0x974A))+(var[1]*0x0CECF)]-(var[2]*0x41F2))+(var[3]*0x691B))-(var[4]*0x0AD9E))-(var[5]*0x48A9))-(var[6]*0x0FEC5))-(var[7]*0xvar_22C))+(var[8]*0x4526))-(var[9]*0x8476))+(var[10]*0x0A69E))+(var[11]*0x14FB))+(var[12]*0x2CCD)
+
+((((((((((((var[0]*0x0E193)-(var[1]*0x5D51))-(var[2]*0x65A0))-(var[3]*0x6252))+(var[4]*0x0D42D))-(var[5]*0x7E51))+(var[6]*0x2999))+(var[7]*0x87F5))-(var[8]*0x23D3))-(var[9]*0x5947))+(var[10]*0x21AD))-(var[11]*0x27A))-(var[12]*0x2E58)
+
+(((((((((([(var[0]*(~0x36B5))+(var[1]*0x3FC3)]+(var[2]*0x0ABBC))+(var[3]*0x876E))+(var[4]*0x0D669))-(var[5]*0x17FD))-(var[6]*0x8A63))-(var[7]*0x0F219))+(var[8]*0x6DE6))+(var[9]*0x0B2))-(var[10]*0x0E91C))+(var[11]*0x3CDA))+(var[12]*0x0C3A2)
+
+((((((((((((var[0]*(~0x9F38))-(var[1]*0x55FE))+(var[2]*0x3528))-(var[3]*0x1352))-(var[4]*0x687E))-(var[5]*0x7BDC))+(var[6]*0x9AB3))+(var[7]*0x3522))-(var[8]*0xE6AF))-(var[9]*0x7FE2))+(var[10]*0x729D))+(var[11]*0x2841))-(var[12]*0x3D22)
+
+(((((((((([(var[0]*(~0x0B98B))+(var[1]*0x0E200)]+(var[2]*0x34A5))-(var[3]*0x27EB))-(var[4]*0x13A8))-(var[5]*0x522F))-(var[6]*0x73A7))+(var[7]*0x0D7C9))-(var[8]*0x17B1))+(var[9]*0x3EAF))-(var[10]*0x11CA))-(var[11]*0x8D6))+(var[12]*0x49D7)
+
+(((((((((([(var[0]*(~0x0FF8B))+(var[1]*0x4317)]-(var[2]*0x24C2))-(var[3]*0x57F2))-(var[4]*0x0CC99))-(var[5]*0x2413))+(var[6]*0x0D03D))+(var[7]*0x0BB25))-(var[8]*0x0E6E7))-(var[9]*0x0A149))-(var[10]*0x5F66))+(var[11]*0x0A0DA))-(var[12]*0x5B97)
+
+(((((((((([(var[0]*0x70D)+(var[1]*0x1027)]-(var[2]*0x4204))+(var[3]*0x8265))+(var[4]*0x0B6AF))+(var[5]*0x0E4B7))-(var[6]*0x8546))-(var[7]*0x0AF78))-(var[8]*0x2E9D))-(var[9]*0x5032))+(var[10]*0x3D53))-(var[11]*0x8EF5))+(var[12]*0x4737)
+
+(((((((((([(var[0]*(~0x0A7BD))+(var[1]*0x0EE80)]-(var[2]*0x0B071))+(var[3]*0x0B071))-(var[4]*0x6BA))-(var[5]*0x6737))+(var[6]*0x0B7CC))+(var[7]*0x0A57B))+(var[8]*0x3AB9))+(var[9]*0x4A1F))+(var[10]*0x2A24))-(var[11]*0x8227))+(var[12]*0x0F8C0)
+
+((((((((((((var[0]*(~0x90DD))-(var[1]*0x0C986))-(var[2]*0x4586))-(var[3]*0x278F))-(var[4]*0x0CCA4))+(var[5]*0x31CA))+(var[6]*0x312B))+(var[7]*0x0E5A2))-(var[8]*0x204D))+(var[9]*0x5855))+(var[10]*0x7821))-(var[11]*0x5175))+(var[12]*0x7DD8)
+
+(((((((((([(var[0]*0x8F2A)+(var[1]*0x0B9CE)]-(var[2]*0x8202))-(var[3]*0x0E72C))+(var[4]*0x0FEAC))+(var[5]*0x240C))-(var[6]*0x0E8CF))-(var[7]*0x0F5A8))+(var[8]*0x0BE4F))+(var[9]*0x0B8F4))-(var[10]*0x92D8))+(var[11]*0x0E10C))+(var[12]*0x9E3E)
+
+(((((((((([(var[0]*0x0CA17)+(var[1]*0x8C27)]-(var[2]*0x0F992))+(var[3]*0x1006))+(var[4]*0x0E877))-(var[5]*0x538A))-(var[6]*0x5121))+(var[7]*0x6795))+(var[8]*0x6DF9))+(var[9]*0x62A4))-(var[10]*0x0AB0D))+(var[11]*0x6421))+(var[12]*0x1C92)
